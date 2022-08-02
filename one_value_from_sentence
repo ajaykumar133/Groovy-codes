@@ -1,0 +1,13 @@
+class Example {
+   static void main(String[] args) {
+      String uterance = "Hello World my ticket-number is API_Response";
+      String ticket_value = "" ;
+      String[] str;           // adding values to list
+      str = uterance.split(' ');
+      
+      for( String values : str ) 
+      if(values.matches("API(.*)")==true){ ticket_value = ticket_value+values; } // if string from list , matches regex , store that in varible
+      
+      println("ticket_value : "+ticket_value)
+   } 
+}
