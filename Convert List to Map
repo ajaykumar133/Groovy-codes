@@ -1,0 +1,16 @@
+def convertToMap(def lst)
+{
+    def map = [:]
+    def size = lst.size()
+    for (int i=0;i<size;i++)
+    {
+        def val = lst[i]
+        map.put(val,val)
+    }
+    
+    return map;
+}
+def lst = ['a','b','c']
+def mp = convertToMap(lst)
+
+println(mp)
