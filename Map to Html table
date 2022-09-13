@@ -1,0 +1,18 @@
+def toHtml(def map)
+{
+def tableHeaddings = "<tr> <th> Key</th>    <th>Value</th>  </tr>"
+
+def row =''
+map.forEach((k,v) -> {
+    row = ("<tr> <td>" + k + "</td><td> " + v+"</td></tr>")
+    tableHeaddings = tableHeaddings+row
+});
+
+def body = tableHeaddings
+
+return body;
+}
+
+def mp = ['a':'a','b':'b','c':'c']
+def htmlTable = toHtml(mp)
+print(htmlTable)
