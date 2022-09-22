@@ -1,0 +1,8 @@
+def convertMapToList(def map)
+{
+mapKeys = map.keySet()
+lst = mapKeys as ArrayList
+println(lst.getClass())    // class java.util.ArrayList
+println(lst)
+return lst
+}
